@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Joyeux Anniversaire Dasly 🎉</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- 🎵 Musique douce -->
+  <audio autoplay loop>
+    <source src="1827_Naza - Happy Birthday SHOW2BABI.COM.mp3" type="audio/mp3">
+    Ton navigateur ne supporte pas l'audio.
+  </audio>
+
+  <canvas id="confetti-canvas"></canvas>
+
+  <div class="container">
+    <h1>🎉 Joyeux Anniversaire Dasly 🎉</h1>
+
+    <div class="photo-frame">
+      <div class="photo-container">
+        <img src="WhatsApp Image 2025-04-03 à 21.01.11_266237bb.jpg" alt="Dasly" />
+      </div>
+    </div>
+
+    <p class="message">
+      Même si c’était hier, je tiens à te souhaiter un anniversaire aussi exceptionnel que toi ! 🎂✨<br />
+      Que cette nouvelle année soit remplie de joie, de rires, et de belles surprises 🎁.<br />
+      Je suis tellement heureux(se) de te connaître et j’espère que chaque jour de cette année t’apportera encore plus de bonheur. 💫
+    </p>
+
+    <div class="signature">
+      Bien amicalement,<br/> Chopper
+    </div>
+
+    <!-- 💌 Message d’amitié -->
+    <div class="coeurs">💖💖💖</div>
+  </div>
+
+  <!-- 🎉 Script confettis -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  <script>
+    // 🎉 Animation de confettis
+    const duration = 5 * 1000;
+    const end = Date.now() + duration;
+    (function frame() {
+      confetti({
+        particleCount: 3,
+        angle: 60,
+        spread: 55,
+        origin: { x: 0 }
+      });
+      confetti({
+        particleCount: 3,
+        angle: 120,
+        spread: 55,
+        origin: { x: 1 }
+      });
+      if (Date.now() < end) {
+        requestAnimationFrame(frame);
+      }
+    })();
+  </script>
+</body>
+</html>

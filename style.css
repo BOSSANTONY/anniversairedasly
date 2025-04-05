@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #f5f5f5, #b3d9ff); /* Dégradé clair et doux */
+    overflow: hidden;
+    text-align: center;
+}
+
+.container {
+    background-color: #ffffff;
+    border-radius: 25px;
+    padding: 40px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    max-width: 650px;
+    width: 90%;
+    margin: 50px auto;
+    animation: fadeIn 2s ease;
+    position: relative;
+}
+
+h1 {
+    font-family: 'Great Vibes', cursive;
+    color: #0066cc;
+    font-size: 3.2em;
+    margin-bottom: 15px;
+    font-weight: normal;
+}
+
+.photo-frame {
+    width: 220px;
+    height: 220px;
+    margin: 20px auto;
+    background: linear-gradient(45deg, #ffb3b3, #ffccff); /* Arrière-plan doux et coloré */
+    border-radius: 50%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 6px;
+}
+
+.photo-container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.photo-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.message {
+    font-size: 1.2em;
+    color: #333333;
+    line-height: 1.8;
+    margin: 20px 0;
+    font-weight: 500;
+}
+
+.signature {
+    font-style: italic;
+    font-size: 1.1em;
+    color: #0059b3;
+    margin-top: 15px;
+}
+
+.coeurs {
+    font-size: 2em;
+    margin-top: 15px;
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.9); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+#confetti-canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 999;
+}
