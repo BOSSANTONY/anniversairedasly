@@ -92,3 +92,70 @@ h1 {
     pointer-events: none;
     z-index: 999;
 }
+/* RESPONSIVE DESIGN */
+
+/* Petits écrans : Smartphones en mode portrait */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    .container {
+        padding: 25px;
+    }
+
+    .message {
+        font-size: 1em;
+    }
+
+    .photo-frame {
+        width: 160px;
+        height: 160px;
+    }
+
+    .signature {
+        font-size: 1em;
+    }
+
+    .coeurs {
+        font-size: 1.5em;
+    }
+}
+
+/* Tablettes et téléphones en mode paysage */
+@media (min-width: 481px) and (max-width: 768px) {
+    h1 {
+        font-size: 2.5em;
+    }
+
+    .photo-frame {
+        width: 180px;
+        height: 180px;
+    }
+
+    .message {
+        font-size: 1.1em;
+    }
+}
+
+/* Grands écrans : ordinateurs portables et desktops */
+@media (min-width: 769px) {
+    h1 {
+        font-size: 3.2em;
+    }
+
+    .photo-frame {
+        width: 220px;
+        height: 220px;
+    }
+
+    .message {
+        font-size: 1.2em;
+    }
+}
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
